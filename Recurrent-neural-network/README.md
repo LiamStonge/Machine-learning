@@ -1,6 +1,6 @@
 # Recurrent-neural-network
 My first Recurrent neural network, able to predict the next days opening **stock price of any company**. 
-I'm a student at Concordia university in computer science. This program was made on my own time outside of school out of interest in the field of machine learning. 
+
 
 #### Brief description of Program: 
 You enter the symbol for the companies stock, the program then takes out data from yahoo finances (you can specifie a start date and end date for the data). 
