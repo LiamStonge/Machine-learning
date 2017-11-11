@@ -1,11 +1,9 @@
 # Artificial Neural Network
-# Installing Theano
-# Installing Tensorflow
-# Installing Keras
+
 
 # Part 1 - data preprocessing 
 #importing the libraries
-import numpy as np #used for math in python
+import numpy as np 
 import matplotlib.pyplot as plt
 import pandas as pd #used to import dataset
 
@@ -13,7 +11,7 @@ import pandas as pd #used to import dataset
 dataset = pd.read_csv('Churn_Modelling.csv')
 #create an array to contain independent variables and one to contain dependent variables
 X = dataset.iloc[:, 3:13].values #independent
-Y = dataset.iloc[:, -1].values #array for dependent (-1 means the last index of array)
+Y = dataset.iloc[:, -1].values #array for dependent 
 #encoding the string variables
 from sklearn.preprocessing import LabelEncoder, OneHotEncoder
 labelencoder_X_1 = LabelEncoder()
@@ -31,8 +29,6 @@ X = X[:, 1:]
 from sklearn.model_selection import train_test_split
 X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size = 0.2, random_state = 0)
 
-# we need to transform variables so that they have their variables in the same scale.
-# this will make sure that the machine doesn't override smaller variables, for example in this dataset the age is much smaller than the salary.
 # Feature Scaling
 from sklearn.preprocessing import StandardScaler
 sc_X = StandardScaler()
