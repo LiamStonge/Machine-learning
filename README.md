@@ -3,5 +3,5 @@ A few machine learning models. I created 4 machine learning models, 3 Supervised
 - Artificial neural network
 - Recurrent neural network
 - Convolutional neural network
-- The unsupervised learning model is the Boltzmann machine. 
+- The unsupervised learning model is the Boltzmann machine.  
 These programs were made on my own time outside of school out of interest in the field of machine learning.
